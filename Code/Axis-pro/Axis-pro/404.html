@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AutoKirin - Premium Auto Repair & Customization</title>
+  <meta name="description" content="AutoKirin offers expert auto repair, performance tuning, custom modifications, and premium detailing services. Trusted by car enthusiasts since 2015.">
+  <meta name="keywords" content="auto repair, car detailing, performance tuning, custom car mods, brake service, oil change, Jakarta auto shop">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Automotive Colors -->
+  <style>
+    :root {
+      --primary-color: #d32f2f;
+      --secondary-color: #1a1a1a;
+      --accent-color: #ff6b35;
+    }
+    .btn-primary { background-color: var(--primary-color); border-color: var(--primary-color); }
+    .btn-primary:hover { background-color: #b71c1c; }
+    .btn-secondary { background-color: var(--accent-color); }
+    .btn-secondary:hover { background-color: #e65100; }
+    .section-title h2::after { background: var(--primary-color); }
+    
+    /* Services Tab Styles */
+    .services-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid #eee;
+      gap: 0.5rem;
+    }
+
+    .service-tab {
+      padding: 1rem 2rem;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-weight: 600;
+      color: #666;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .service-tab.active {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
+      background: rgba(211, 47, 47, 0.05);
+    }
+
+    .service-tab:hover:not(.active) {
+      color: var(--accent-color);
+      background: rgba(255, 107, 53, 0.05);
+    }
+
+    .services-content {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .services-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .service-link {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-link:hover {
+      color: var(--accent-color);
+      transform: translateX(5px);
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">AutoKirin</h1>
+        <span class="logo-tag">Auto Care & Performance</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Gallery</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li class="dropdown"><a href="#"><span>Galeri</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Mobil</a></li>
+              <li class="dropdown"><a href="#"><span>Mobil</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Service & Perbaikan</a></li>
+                  <li><a href="#">Tips & Trik</a></li>
+                  <li><a href="#">Custom & Modifikasi</a></li>
+                  <li><a href="#">Matic</a></li>
+                  <li><a href="#">Sport & Racing</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Motor</a></li>
+              <li><a href="#">Bus & Truk</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Your Car Deserves the Best Care</h1>
+              <p data-aos="fade-up" data-aos-delay="300">Professional auto repair, performance tuning, and premium detailing. Trusted by over 500+ car owners in Jakarta.</p>
+              <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn-primary">Book Service Now</a>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
+                  <i class="bi bi-play-circle"></i> Watch Our Shop
+                </a>
+              </div>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="stat-item">
+                  <div class="stat-number">500+</div>
+                  <div class="stat-label">Vehicles Serviced</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">98%</div>
+                  <div class="stat-label">Customer Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">10+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+              <img src="https://i.pinimg.com/736x/4f/45/a5/4f45a516c71f7243798ee58a2b0bfc92.jpg" alt="Premium Car Service" class="img-fluid">
+              <div class="floating-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card-icon">
+                  <i class="bi bi-speedometer2"></i>
+                </div>
+                <div class="card-content">
+                  <h5>Performance Boost</h5>
+                  <div class="growth-percentage">+35%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Us</span>
+        <h2>Precision Auto Care Since 2015</h2>
+        <p>AutoKirin adalah bengkel spesialis dengan teknisi bersertifikat yang berdedikasi untuk menjaga performa dan estetika kendaraan Anda.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h2>Expert Care for Every Vehicle</h2>
+              <p class="lead">Kami menggabungkan teknologi modern dengan keahlian tradisional untuk memberikan layanan terbaik bagi mobil Anda.</p>
+
+              <p>Dari perawatan rutin hingga modifikasi performa tinggi, tim kami menangani semua jenis kendaraan — sedan, SUV, sport car, hingga mobil klasik.</p>
+
+              <p>Dengan peralatan diagnostik canggih dan suku cadang original, kami menjamin hasil maksimal dan kepuasan pelanggan.</p>
+
+              <div class="stats-row">
+                <div class="stat-item">
+                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"></div>
+                  <div class="stat-label">Years in Business</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="850" data-purecounter-duration="1"></div>
+                  <div class="stat-label">Cars Serviced</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="240" data-purecounter-duration="1"></div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="#team" class="btn-outline">Meet Our Mechanics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="https://i.pinimg.com/736x/15/a1/fe/15a1fefe90264234d99f36153c1bafab.jpg" alt="AutoKirin Workshop" class="img-fluid">
+              <div class="floating-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="card-content">
+                  <div class="icon">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Certified Shop</h4>
+                    <p>ASE & I-CAR Certified Technicians</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Our Services</span>
+        <h2>Complete Auto Solutions</h2>
+        <p>Dari perawatan harian hingga modifikasi ekstrem — kami siap wujudkan impian otomotif Anda.</p>
+      </div>
+
+      <!-- Services Tabs -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="services-tabs">
+          <button class="service-tab active" data-tab="maintenance">Maintenance</button>
+          <button class="service-tab" data-tab="performance">Performance</button>
+          <button class="service-tab" data-tab="cosmetic">Cosmetic</button>
+          <button class="service-tab" data-tab="specialty">Specialty</button>
+        </div>
+
+        <!-- Maintenance Services -->
+        <div class="services-content active" id="maintenance">
+          <div class="row gy-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-wrench-adjustable"></i>
+                </div>
+                <h3>General Repair</h3>
+                <p>Brake, suspension, transmission, AC repair with genuine parts and warranty.</p>
+                <a href="General Repair Services - AutoKirin.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <h3>Oil & Fluid Services</h3>
+                <p>Complete fluid changes, filter replacements, and lubrication services.</p>
+                <a href="oil-services.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-ev-station"></i>
+                </div>
+                <h3>EV & Hybrid Service</h3>
+                <p>Battery diagnostics, software updates, regenerative braking service.</p>
+                <a href="ev-services.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance Services -->
+        <div class="services-content" id="performance">
+          <div class="row gy-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-speedometer2"></i>
+                </div>
+                <h3>Performance Tuning</h3>
+                <p>ECU remap, exhaust upgrade, turbo kits, suspension tuning for track or daily.</p>
+                <a href="performance-tuning.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-fuel-pump"></i>
+                </div>
+                <h3>Engine Upgrades</h3>
+                <p>Forced induction, internal engine work, cooling system upgrades.</p>
+                <a href="engine-upgrades.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-gear-wide"></i>
+                </div>
+                <h3>Drivetrain Mods</h3>
+                <p>LSD installation, transmission upgrades, clutch and flywheel packages.</p>
+                <a href="drivetrain-mods.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cosmetic Services -->
+        <div class="services-content" id="cosmetic">
+          <div class="row gy-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-droplet"></i>
+                </div>
+                <h3>Premium Detailing</h3>
+                <p>Interior/exterior polishing, ceramic coating, paint correction by certified detailers.</p>
+                <a href="premium-detailing.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-paint-bucket"></i>
+                </div>
+                <h3>Body & Paint</h3>
+                <p>Collision repair, custom paint, wrap installation, dent removal (PDR).</p>
+                <a href="body-paint.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-brush"></i>
+                </div>
+                <h3>Custom Wraps</h3>
+                <p>Full vehicle wraps, color changes, protective films, and graphic designs.</p>
+                <a href="custom-wraps.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialty Services -->
+        <div class="services-content" id="specialty">
+          <div class="row gy-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h3>Custom Fabrication</h3>
+                <p>Roll cages, widebody kits, custom interiors — built to your specs.</p>
+                <a href="custom-fabrication.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-car-front"></i>
+                </div>
+                <h3>Restoration</h3>
+                <p>Classic car restoration, frame-off restorations, vintage vehicle services.</p>
+                <a href="restoration.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Safety & Security</h3>
+                <p>Roll cage installation, brake upgrades, security systems, and track safety.</p>
+                <a href="safety-security.html" class="service-link" target="_blank">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio / Gallery Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Gallery</span>
+        <h2>Our Latest Work</h2>
+        <p>Lihat transformasi kendaraan pelanggan kami — dari restorasi klasik hingga build performa ekstrem.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-detailing">Detailing</li>
+            <li data-filter=".filter-tuning">Tuning</li>
+            <li data-filter=".filter-custom">Custom</li>
+            <li data-filter=".filter-repair">Repair</li>
+          </ul>
+
+          <div class="row gy-5 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-12 portfolio-item isotope-item filter-detailing">
+              <article class="portfolio-card">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="project-visual">
+                      <img src="https://i.pinimg.com/1200x/90/33/2c/90332c80b6937d9ae955a2c6ff4eea38.jpg" alt="Ceramic Coating" class="img-fluid" loading="lazy">
+                      <div class="project-overlay">
+                        <div class="overlay-content">
+                          <a href="assets/img/gallery/ceramic-coating.webp" class="view-project glightbox">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="project-details">
+                      <div class="project-header">
+                        <span class="project-category">Detailing</span>
+                        <time class="project-year">2025</time>
+                      </div>
+                      <h3 class="project-title">9H Ceramic Coating</h3>
+                      <p class="project-description">Full exterior protection with 5-year warranty. Mirror-like shine and hydrophobic effect.</p>
+                      <div class="project-meta">
+                        <span class="client-name">Toyota GR Supra</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Add more gallery items as needed -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Our Experts</span>
+        <h2>Meet the AutoKirin Team</h2>
+        <p>Teknisi berpengalaman dengan sertifikasi internasional siap tangani kendaraan Anda.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://i.pinimg.com/736x/03/12/75/03127585bccb5ec586fcdbac41ccce18.jpg" class="img-fluid" alt="Budi Santoso">
+              </div>
+              <div class="member-info">
+                <h4>Daniel Santoso</h4>
+                <span>Head Mechanic</span>
+                <p>15+ years in Japanese & European cars. ECU tuning specialist.</p>
+                <div class="social">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://i.pinimg.com/1200x/5a/ae/cb/5aaecb25403dbe63224f22495e81fd81.jpg" class="img-fluid" alt="Siti Nurhaliza" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4>Siti Nurhaliza</h4>
+                <span>Head Detailer</span>
+                <p>Ceramic coating, paint correction, interior restoration specialist.</p>
+                <div class="social">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Team Member 4 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://i.pinimg.com/736x/7e/a5/74/7ea57473bbb2f384ca8ae91435034beb.jpg" class="img-fluid" alt="Sandi Hartono" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4>Sandi Hartono</h4>
+                <span>Body & Paint Expert</span>
+                <p>Collision repair, custom paint, vinyl wrap, dent removal (PDR).</p>
+                <div class="social">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Team Member 5 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="https://i.pinimg.com/1200x/85/43/60/85436024f0454cf783556273ea80f3a6.jpg" class="img-fluid" alt="Dian Sastro" loading="lazy">
+              </div>
+              <div class="member-info">
+                <h4>Dian Sastro</h4>
+                <span>EV & Hybrid Technician</span>
+                <p>Battery diagnostics, high-voltage systems, software calibration.</p>
+                <div class="social">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Book Your Service</h2>
+        <p>Hubungi kami untuk konsultasi gratis atau jadwalkan kunjungan bengkel.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="info-content">
+                <h4>Visit Our Workshop</h4>
+                <p>Jl. Raya Otomotif No.88, Jakarta Selatan</p>
+              </div>
+            </div>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="bi bi-telephone-outbound"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Call / WhatsApp</span>
+                  <span class="detail-value">+62 812-3456-7890</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Open Hours</span>
+                  <span class="detail-value">Mon–Sat: 8AM–6PM<br>Sunday: Appointment Only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Service Needed (e.g. Oil Change, Detailing)">
+              </div>
+              <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Tell us about your car and needs..."></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Message sent! We'll contact you soon.</div>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">AutoKirin</span>
+          </a>
+          <p>Bengkel spesialis terpercaya untuk perawatan, modifikasi, dan performa kendaraan Anda. Kualitas terjamin, harga transparan.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact">
+          <h4>Workshop Location</h4>
+          <p>Jl. Raya Otomotif No.88</p>
+          <p>Jakarta Selatan, 12740</p>
+          <p class="mt-4"><strong>WA:</strong> <span>+62 812-3456-7890</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">AutoKirin</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Tab Functionality JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all tab buttons and content sections
+      const tabButtons = document.querySelectorAll('.service-tab');
+      const tabContents = document.querySelectorAll('.services-content');
+      
+      // Function to switch tabs
+      function switchTab(tabId) {
+        console.log('Switching to tab:', tabId);
+        
+        // Remove active class from all tabs and contents
+        tabButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Add active class to clicked tab and corresponding content
+        const activeTab = document.querySelector(`.service-tab[data-tab="${tabId}"]`);
+        const activeContent = document.getElementById(tabId);
+        
+        if (activeTab && activeContent) {
+          activeTab.classList.add('active');
+          activeContent.classList.add('active');
+        }
+      }
+      
+      // Add click event listeners to all tab buttons
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const tabId = this.getAttribute('data-tab');
+          console.log('Tab clicked:', tabId);
+          switchTab(tabId);
+        });
+      });
+      
+      // Initialize first tab as active
+      const firstTab = document.querySelector('.service-tab.active');
+      if (firstTab) {
+        const firstTabId = firstTab.getAttribute('data-tab');
+        console.log('Initializing first tab:', firstTabId);
+        switchTab(firstTabId);
+      } else {
+        // Fallback: activate first tab if none is active
+        console.log('No active tab found, activating first one');
+        if (tabButtons.length > 0) {
+          const firstTabId = tabButtons[0].getAttribute('data-tab');
+          switchTab(firstTabId);
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

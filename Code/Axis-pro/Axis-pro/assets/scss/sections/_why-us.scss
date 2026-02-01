@@ -1,0 +1,122 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+.why-us {
+  padding: 100px 0;
+
+  .content {
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin: 0;
+    }
+  }
+
+  .image-wrapper {
+    position: relative;
+
+    img {
+      border-radius: 8px;
+      box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+      transition: transform 0.4s ease-in-out;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  .features-grid {
+    margin-top: 80px;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 25px;
+    padding: 40px 0;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      .icon-wrapper {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        transform: scale(1.1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      padding: 30px 0;
+    }
+  }
+
+  .icon-wrapper {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    transition: all 0.4s ease-in-out;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  .feature-content {
+    flex: 1;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+      line-height: 1.3;
+
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .content {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .features-grid {
+      margin-top: 60px;
+    }
+  }
+}

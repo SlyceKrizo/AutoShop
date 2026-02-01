@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 87px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .subtitle {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 1px;
+      background: var(--accent-color);
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    max-width: 900px;
+    margin: 0 auto;
+    text-wrap: balance;
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_about.scss';
+@import './sections/_services.scss';
+@import './sections/_why-us.scss';
+@import './sections/_portfolio.scss';
+@import './sections/_team.scss';
+@import './sections/_testimonials.scss';
+@import './sections/_contact.scss';
+@import './sections/_portfolio-details.scss';
+@import './sections/_service-details.scss';
+@import './sections/_terms-of-service.scss';
+@import './sections/_privacy.scss';
+@import './sections/_error-404.scss';
+@import './sections/_starter-section.scss';

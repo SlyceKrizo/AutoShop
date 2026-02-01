@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV & Hybrid Services - AutoKirin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    .service-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .service-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      background: linear-gradient(135deg, #00c853, #009624);
+      color: white;
+      border-radius: 10px;
+    }
+    .service-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .service-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .service-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .service-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .service-details h2 {
+      color: #00c853;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .service-features {
+      margin: 2rem 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+      background: #00c853;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .pricing-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #00c853;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #009624;
+    }
+    .ev-benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .benefit-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      border-left: 4px solid #00c853;
+    }
+    .benefit-card i {
+      font-size: 2rem;
+      color: #00c853;
+      margin-bottom: 1rem;
+    }
+    .tech-specs {
+      background: #e8f5e8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    @media (max-width: 768px) {
+      .service-content {
+        grid-template-columns: 1fr;
+      }
+      .service-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="service-container">
+    <div class="service-header">
+      <h1>EV & Hybrid Services</h1>
+      <p>Specialized maintenance for electric and hybrid vehicles with certified technicians</p>
+    </div>
+
+    <div class="service-content">
+      <div class="service-image">
+        <img src="https://i.pinimg.com/1200x/6b/c6/d8/6bc6d874eda0f123a5dfff33cd0c15b2.jpg" alt="EV Service">
+      </div>
+      
+      <div class="service-details">
+        <h2>Expert Electric Vehicle Care</h2>
+        <p>AutoKirin is equipped with state-of-the-art diagnostic tools and certified technicians specialized in electric and hybrid vehicle maintenance. We provide comprehensive services to keep your EV running efficiently and safely.</p>
+        
+        <div class="service-features">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Battery Diagnostics</strong>
+              <p>Complete battery health analysis and capacity testing</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Software Updates</strong>
+              <p>ECU and battery management system software calibration</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Charging System</strong>
+              <p>Charging port inspection and onboard charger diagnostics</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Regenerative Braking</strong>
+              <p>Brake system service optimized for regenerative braking</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-specs">
+          <h3>Advanced EV Diagnostics</h3>
+          <p>Our workshop features specialized equipment for high-voltage systems, including battery cell balancing, thermal management system diagnostics, and electric motor performance analysis.</p>
+        </div>
+
+        <div class="ev-benefits">
+          <div class="benefit-card">
+            <i class="bi bi-battery-charging"></i>
+            <h4>Battery Health</h4>
+            <p>Extended battery life through proper maintenance</p>
+          </div>
+          <div class="benefit-card">
+            <i class="bi bi-cpu"></i>
+            <h4>Software Optimization</h4>
+            <p>Latest firmware updates for optimal performance</p>
+          </div>
+          <div class="benefit-card">
+            <i class="bi bi-shield-check"></i>
+            <h4>Safety Certified</h4>
+            <p>High-voltage system safety inspections</p>
+          </div>
+        </div>
+
+        <div class="pricing-section">
+          <h3>Service Pricing</h3>
+          <div class="price-item">
+            <span>EV Battery Health Check</span>
+            <strong>Rp 750.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Software System Update</span>
+            <strong>Rp 450.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Charging System Diagnostic</span>
+            <strong>Rp 600.000</strong>
+          </div>
+          <div class="price-item">
+            <span>High Voltage System Inspection</span>
+            <strong>Rp 850.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Electric Motor Service</span>
+            <strong>Rp 1.200.000</strong>
+          </div>
+          
+          <a href="index.html#contact" class="cta-button">Schedule EV Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

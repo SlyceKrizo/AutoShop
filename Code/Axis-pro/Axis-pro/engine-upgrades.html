@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engine Upgrades - AutoKirin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    .service-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .service-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      background: linear-gradient(135deg, #d32f2f, #ff6b35);
+      color: white;
+      border-radius: 10px;
+    }
+    .service-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .service-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .service-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .service-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .service-details h2 {
+      color: #d32f2f;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .service-features {
+      margin: 2rem 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+      background: #d32f2f;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .pricing-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #d32f2f;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #b71c1c;
+    }
+    .upgrade-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .upgrade-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      border-left: 4px solid #d32f2f;
+    }
+    .upgrade-card i {
+      font-size: 2rem;
+      color: #d32f2f;
+      margin-bottom: 1rem;
+    }
+    .power-gains {
+      background: #ffeaea;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    @media (max-width: 768px) {
+      .service-content {
+        grid-template-columns: 1fr;
+      }
+      .service-header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="service-container">
+    <div class="service-header">
+      <h1>Engine Upgrades</h1>
+      <p>Forced induction systems and internal engine modifications for extreme power</p>
+    </div>
+
+    <div class="service-content">
+      <div class="service-image">
+        <img src="https://i.pinimg.com/736x/e5/63/53/e5635309c559a8fc009f83c43dad5ea4.jpg" alt="Engine Upgrades">
+      </div>
+      
+      <div class="service-details">
+        <h2>Build The Ultimate Powerplant</h2>
+        <p>AutoKirin specializes in comprehensive engine upgrades from turbocharger installations to complete engine builds. Our team of experienced technicians ensures every modification is performed with precision and reliability in mind.</p>
+        
+        <div class="service-features">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Turbocharger Installation</strong>
+              <p>Complete turbo kit installation with intercooler and piping</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Supercharger Systems</strong>
+              <p>Roots-type and centrifugal supercharger installations</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Internal Engine Work</strong>
+              <p>Forged pistons, connecting rods, and crankshaft balancing</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Cooling System Upgrades</strong>
+              <p>High-capacity radiators, oil coolers, and intercoolers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="power-gains">
+          <h3>Power Output Potential</h3>
+          <p>Properly built engines with forced induction can achieve 2-3 times the original horsepower while maintaining street reliability with our comprehensive supporting modifications.</p>
+        </div>
+
+        <div class="upgrade-options">
+          <div class="upgrade-card">
+            <i class="bi bi-fan"></i>
+            <h4>Turbo Systems</h4>
+            <p>Garrett, BorgWarner<br>Precision turbo kits</p>
+          </div>
+          <div class="upgrade-card">
+            <i class="bi bi-gear"></i>
+            <h4>Superchargers</h4>
+            <p>Whipple, Vortech<br>Procharger systems</p>
+          </div>
+          <div class="upgrade-card">
+            <i class="bi bi-tools"></i>
+            <h4>Engine Building</h4>
+            <p>Forged internals<br>Blueprinting & balancing</p>
+          </div>
+        </div>
+
+        <div class="pricing-section">
+          <h3>Service Pricing</h3>
+          <div class="price-item">
+            <span>Basic Turbo Kit Installation</span>
+            <strong>Rp 15.000.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Supercharger System Install</span>
+            <strong>Rp 18.000.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Engine Forged Internals</span>
+            <strong>Rp 25.000.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Complete Engine Rebuild</span>
+            <strong>Rp 35.000.000</strong>
+          </div>
+          <div class="price-item">
+            <span>Cooling System Upgrade</span>
+            <strong>Rp 8.000.000</strong>
+          </div>
+          
+          <a href="index.html#contact" class="cta-button">Consult Engine Build</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

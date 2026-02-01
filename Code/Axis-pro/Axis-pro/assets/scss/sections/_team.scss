@@ -1,0 +1,124 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  .team-member {
+    text-align: center;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+
+    .member-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 30px;
+
+      img {
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        height: auto;
+        filter: grayscale(100%);
+      }
+    }
+
+    .member-info {
+      h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+        color: var(--heading-color);
+        line-height: 1.3;
+      }
+
+      span {
+        display: block;
+        font-size: 0.9rem;
+        color: var(--accent-color);
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin-bottom: 25px;
+        padding: 0 10px;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+          border-radius: 50%;
+          color: color-mix(in srgb, var(--default-color), transparent 40%);
+          font-size: 16px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--contrast-color);
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .member-img img {
+        transform: scale(1.05);
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .team-member {
+      .member-info {
+        h4 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .team-member {
+      .member-info {
+        h4 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          padding: 0;
+          font-size: 0.85rem;
+        }
+
+        .social {
+          gap: 12px;
+
+          a {
+            width: 36px;
+            height: 36px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
